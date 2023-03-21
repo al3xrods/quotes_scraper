@@ -1,6 +1,6 @@
 
 # CHECKING LANGUAGUE OF TEXT.
-from langdetect import detect
+from langdetect import detect 
 
 english = []
 with open("a.txt", 'w', encoding="utf-8") as f:
@@ -16,6 +16,7 @@ with open("a.txt", 'w', encoding="utf-8") as f:
 
 # =============================================================================================================================================
 # FINDING NOT WANTED WORDS => REMOVING LINE.
+
 bad_words = ['bad', 'naughty']
 with open('b.txt', 'r', encoding="utf-8") as oldfile, open('a.txt', 'a', encoding="utf-8") as newfile:
     for line in oldfile:
